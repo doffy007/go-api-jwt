@@ -23,6 +23,7 @@ var (
 	productController controller.ProductController = controller.NewProductController(productService, jwtService)
 )
 
+//Get main page
 func main() {
 	defer config.CloseDatabaseConnection(db)
 	r := gin.Default()
