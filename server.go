@@ -50,5 +50,5 @@ func main() {
 		productRoutes.DELETE("/:id", productController.Delete)
 	}
 	
-	r.Run(":3306")
+	r.Run()
 }
